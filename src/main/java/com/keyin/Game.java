@@ -1,7 +1,5 @@
 package com.keyin;
 
-import java.util.Objects;
-
 public class Game {
     private String title;
     private double price;
@@ -37,7 +35,7 @@ public class Game {
 
     public void decreaseStock(int amount) {
         if (amount > stock) {
-            throw new IllegalStateException("Not enough stock");
+            throw new IllegalArgumentException("Not enough stock");
         }
         stock -= amount;
     }

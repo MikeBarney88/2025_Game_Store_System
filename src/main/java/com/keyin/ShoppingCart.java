@@ -1,8 +1,5 @@
 package com.keyin;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class ShoppingCart {
     private Game[] games;
     private int itemCount;
